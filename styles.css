@@ -1,0 +1,249 @@
+body{
+	margin: 5px 0 0 0;
+	min-width: 1024px;
+}
+header{
+	z-index: 1000;
+	position: relative;
+	padding-left: 1%;
+	height: 30px;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+}
+.logo{
+	position: relative;
+	max-height: 23px;
+	float: left;
+	left: 2%;
+}
+.menu{
+	display: inline-flex;
+	font-family: Helvetica;
+}
+.menu ul:first-child{
+	margin: 0;
+}
+.menu ul:first-child a{
+	padding: 12.5px 30px;
+}
+.topmenu{
+	list-style: none;
+	display: inline-flex;
+}
+.topmenu li a{
+	text-decoration: none;
+	color: #2F2F2F;
+	width: 150px;
+}
+.topmenu a:focus, a:hover{
+	background-color: #f2f2f2;
+}
+
+.submenu li:hover{
+	background-color: #e5e5e5;
+	transition: background-color 0.2s linear 0s;
+}
+.submenu a:hover{
+	background-color: transparent;
+}
+.submenu{
+	position: absolute;
+	top: 30px;
+	background-color: #f2f2f2;
+	width: 255px;
+	padding: 0;
+	list-style: none;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+}
+.submenu li{
+	padding: 15px 0 15px 0;
+}
+.submenu a{
+	padding-left: 20px;
+}
+.submenu li:hover .subsubmenu{
+	margin-left: 255px;
+	top: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	position: absolute;
+	background-color: #e5e5e5;
+	width: 255px;
+	min-height: 100%;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+}
+.subsubmenu{
+	display: none;
+}
+.subsubmenu li:hover{
+	background-color: #ccc;
+}
+
+input[type="search"]{
+	position: absolute;
+	right: 15%;
+	box-sizing: border-box;
+	width: 220px;
+	height: 25px;
+	border: 1px solid #A9A9A9;
+	border-right: 0;
+	color: #2F2F2F;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+	outline: none;
+	padding-left: 10px;
+	font-size: 16px;
+}
+.search-icon{
+	position: absolute;
+	right: 15%;
+	top: 0;
+	padding: 4px 5px 3px 0;
+	width: 17px;
+	border: 1px solid #A9A9A9;
+	border-left: 0;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+	cursor: pointer;
+	background: white;
+}
+.shop-cart{
+	top: -30%;
+	position: absolute;
+	height: 39px;
+	width: 40px;
+	right: 11%;
+}
+.cart-icon{
+	position: relative;
+	left: 30%;
+	top: 30%;
+	width: 15px;
+}
+.log-in{
+	line-height: 37px;
+	position: absolute;
+	top: -7px;
+	right: 6%;
+	text-decoration: none;
+	color: #2F2F2F;
+	font-family: Helvetica;
+	font-size: 12px;
+	padding: 0 15px;
+}
+.log-in:hover{
+	color: #0078d7;
+}
+
+.hero-banner{
+	font-family: 'Open Sans', Helvetica;
+	background: url('img/herobanner.jpg') #f7f7f7 100% center no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 600px;
+	color: #47525d;
+}
+@media screen and (max-width: 1200px){
+	.hero-banner{
+		background-position: 300px center;
+	}
+}
+h1, h2{
+	font-weight: 300;
+	max-width: 500px;
+	min-width: 200px;
+	width: 30%;
+	margin: 0;
+}
+h1{
+	font-size: 2.5em;
+	padding: 50px 0 0 0;
+}
+h2{
+	font-size: 1.3em;
+	line-height: 1.5em;
+	padding: 30px 0 0 0;
+}
+@media screen and (max-width: 1300px) {
+    h1 {
+        font-size:2em;
+    }
+    h2 {
+    	font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size:1.5em;
+    }
+    h2 {
+    	font-size: 1em;
+    }
+}
+.primary{
+	display: block;
+	width: 700px;
+	background: #0071e0;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	font-weight: 400;
+	font-size: 21px;
+	padding: 15px;
+	margin: 50px 0 0 0;
+	border-radius: 6px;
+}
+.primary:hover{
+	background: #007ee5;
+}
+@media screen and (max-width: 1400px){
+	.primary{
+		width: 580px;
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 1300px){
+	.primary{
+		width: 450px;
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 1200px){
+	.primary{
+		width: 400px;
+		font-size: 12px;
+	}
+}
+.buynow{
+	display: block;
+	margin: 30px 0 0 0;
+}
+.buynow a{
+	text-decoration: none;
+	color: #0071e0;
+	border-bottom: 1px solid #0071e0;
+}
+.buynow a:hover{
+	color: #2895F1;
+	background-color: transparent;
+}
+h1, h2, .primary, .buynow{
+	margin-left: 20%;
+}
+@media screen and (max-width: 1450px){
+	h1, h2, .primary, .buynow{
+		margin-left: 10%;
+	}
+}
+@media screen and (max-width: 1250px){
+	h1, h2, .primary, .buynow{
+		margin-left: 60px;
+	}
+	h2{
+		padding-top: 15px;
+	}
+	.primary{
+		margin-top: 30px;
+	}
+	.buynow{
+		margin-top: 15px;
+	}
+}
