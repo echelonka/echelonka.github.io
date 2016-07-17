@@ -3,6 +3,6 @@ function initMenu() {
   $('ul:first li').click(
     function() {
     	$(this).children('.submenu').slideToggle('fast');
-      });
-  }
-	$(document).ready(function() {initMenu();});
+    });
+  };
+$(document).ready(function() {initMenu();});
