@@ -1,14 +1,19 @@
 @font-face {
   font-family: Lora;
-  src: url(fonts/Lora.ttf) format('ttf');
+  src: url('fonts/Lora.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: LoraBold;
-  src: url(fonts/LoraBold.ttf);
+  src: url('fonts/LoraBold.ttf') format('truetype');
+  font-weight: bold;
 }
 @font-face {
   font-family: Sunday;
-  src: url(font/Sunday.ttf) format('ttf');
+  src: url('fonts/Sunday.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 body {
   background-color: #394248;
