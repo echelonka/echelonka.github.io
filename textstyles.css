@@ -1,0 +1,121 @@
+@font-face {
+  font-family: Lora;
+  src: url(fonts/Lora.ttf) format('ttf');
+}
+@font-face {
+  font-family: LoraBold;
+  src: url(fonts/LoraBold.ttf);
+}
+@font-face {
+  font-family: Sunday;
+  src: url(font/Sunday.ttf) format('ttf');
+}
+body {
+  background-color: #394248;
+  margin: 0;
+  margin: 0;
+  background-color: #394248;
+}
+body ::selection {
+  background-color: #394248;
+  color: #ffffff;
+}
+body ::-moz-selection {
+  background-color: #394248;
+  color: #ffffff;
+}
+body b {
+  font-family: LoraBold;
+}
+.main {
+  width: 1024px;
+  margin: 0 auto 10px auto;
+}
+.main header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  background: #263a3a;
+  background: linear-gradient(to top, #1d2c2c, #263a3a);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.main header a {
+  text-align: center;
+  line-height: 35px;
+  text-decoration: none;
+  width: 100%;
+  height: inherit;
+  display: block;
+  background: linear-gradient(to top, #1d2c2c, #263a3a);
+  font-family: Lora;
+  font-size: 18px;
+  color: #ffffff;
+  border-right: 2px solid rgba(255, 255, 255, 0.1);
+  transition: .3s ease;
+}
+.main header a:hover {
+  background: #2a4040;
+  font-size: 20px;
+}
+.main header a:first-child {
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+}
+.main header a.is-active {
+  background: #2a4040;
+  font-size: 20px;
+}
+.main .hero {
+  width: 100%;
+  height: 440px;
+  background: url('img/title-image.jpg') no-repeat;
+  box-shadow: inset 0 6px 10px -4px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.2);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.main .hero .headers {
+  font-family: Sunday;
+  margin: 0;
+  color: white;
+  text-align: center;
+  text-shadow: 0 4px 10px black;
+}
+.main .hero h1 {
+  font-family: Sunday;
+  margin: 0;
+  color: white;
+  text-align: center;
+  text-shadow: 0 4px 10px black;
+  font-size: 72px;
+}
+.main .hero h2 {
+  font-family: Sunday;
+  margin: 0;
+  color: white;
+  text-align: center;
+  text-shadow: 0 4px 10px black;
+  font-size: 48px;
+  padding-top: 70px;
+}
+.main .contentwrap {
+  margin: 0 auto;
+  width: 800px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 30px 20px 40px 20px;
+  color: #263a3a;
+}
+.main .contentwrap h3 {
+  font-family: Sunday;
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+}
+.main .contentwrap .tab {
+  display: none;
+}
+.main .contentwrap .tab.is-active {
+  display: block;
+}

@@ -1,0 +1,235 @@
+@font-face {
+  font-family: Lora;
+  src: url(fonts/Lora.ttf) format('ttf');
+}
+@font-face {
+  font-family: LoraBold;
+  src: url(fonts/LoraBold.ttf);
+}
+@font-face {
+  font-family: Sunday;
+  src: url(font/Sunday.ttf) format('ttf');
+}
+body {
+  margin: 0;
+  background-color: #394248;
+}
+body ::selection {
+  background-color: #394248;
+  color: #ffffff;
+}
+body ::-moz-selection {
+  background-color: #394248;
+  color: #ffffff;
+}
+body b {
+  font-family: LoraBold;
+}
+.main {
+  width: 1024px;
+  margin: 0 auto 10px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.main header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  background: #263a3a;
+  background: linear-gradient(to top, #1d2c2c, #263a3a);
+}
+.main header a {
+  text-align: center;
+  line-height: 35px;
+  text-decoration: none;
+  width: 125px;
+  height: inherit;
+  display: block;
+  background: linear-gradient(to top, #1d2c2c, #263a3a);
+  font-family: Lora;
+  font-size: 18px;
+  color: #ffffff;
+  border-right: 2px solid rgba(255, 255, 255, 0.1);
+  transition: .3s ease;
+}
+.main header a:hover {
+  background: #2a4040;
+  font-size: 20px;
+}
+.main header a:first-child {
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+}
+.main header a.is-active {
+  background: #2a4040;
+  font-size: 20px;
+}
+.main .hero {
+  width: 100%;
+  height: 440px;
+  background: url('img/title-image.jpg') no-repeat;
+  box-shadow: inset 0 6px 10px -4px rgba(0, 0, 0, 0.5);
+}
+.main .hero .headers {
+  font-family: Sunday;
+  margin: 0;
+  color: white;
+  text-align: center;
+  text-shadow: 0 4px 10px black;
+}
+.main .hero h1 {
+  font-family: Sunday;
+  margin: 0;
+  color: white;
+  text-align: center;
+  text-shadow: 0 4px 10px black;
+  font-size: 72px;
+}
+.main .hero h2 {
+  font-family: Sunday;
+  margin: 0;
+  color: white;
+  text-align: center;
+  text-shadow: 0 4px 10px black;
+  font-size: 48px;
+  padding-top: 70px;
+}
+.main .contentwrap {
+  padding: 30px 50px 40px 50px;
+  background-color: #ffffff;
+  font-family: Lora;
+  color: #263a3a;
+  border-radius: 0 0 10px 10px;
+}
+.main .contentwrap .tab {
+  display: none;
+}
+.main .contentwrap .tab.is-active {
+  display: block;
+}
+.main .contentwrap .tab .top {
+  width: 50px;
+  height: 50px;
+  background: url('img/arrow.svg') no-repeat #bba989 center;
+  cursor: pointer;
+  position: fixed;
+  bottom: 47px;
+  right: 50px;
+  display: none;
+  opacity: .5;
+  border-radius: 5px;
+}
+.main .contentwrap h3 {
+  margin: 0;
+  font-size: 50px;
+}
+.main .contentwrap hr {
+  margin: 10px 0 0 0;
+  height: 5px;
+  background-color: #263a3a;
+  border: none;
+}
+.main .contentwrap .content {
+  display: flex;
+}
+.main .contentwrap .content ul {
+  margin: 0;
+  padding: 20px 15px 0 0;
+}
+.main .contentwrap .content ul li {
+  list-style-type: none;
+  padding-bottom: 24px;
+}
+.main .contentwrap .content ul li a {
+  text-decoration: none;
+  color: #263a3a;
+  font-size: 20px;
+  transition: 0.3 ease;
+}
+.main .contentwrap .content ul li a:hover {
+  text-decoration: underline;
+}
+.main .contentwrap .content ul li:last-child {
+  padding-bottom: 0;
+}
+.main .contentwrap .content ul:last-child {
+  padding-right: 0;
+}
+.main .contentwrap .text-format {
+  font-size: 18px;
+  text-indent: 30px;
+  line-height: 1.5;
+}
+.main .contentwrap .header-format {
+  font-size: 24px;
+  margin: 20px 0 10px 0;
+}
+.main .contentwrap .paragraph-format {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.main .contentwrap .about_book img {
+  float: right;
+  margin: 0 0 25px 25px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+.main .contentwrap .about_book h4 {
+  font-size: 18px;
+  text-indent: 30px;
+  line-height: 1.5;
+  font-size: 24px;
+  margin: 20px 0 10px 0;
+}
+.main .contentwrap .about_book p {
+  font-size: 18px;
+  text-indent: 30px;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.main .contentwrap .about_book ul {
+  font-size: 18px;
+  text-indent: 30px;
+  line-height: 1.5;
+  text-indent: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.main .contentwrap .about_author img {
+  float: left;
+  margin: 0 25px 25px 0;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  width: 350px;
+}
+.main .contentwrap .about_author h4 {
+  font-size: 18px;
+  text-indent: 30px;
+  line-height: 1.5;
+  font-size: 24px;
+  margin: 20px 0 10px 0;
+}
+.main .contentwrap .about_author p {
+  font-size: 18px;
+  text-indent: 30px;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.main .contentwrap .about_author p:last-child {
+  margin-bottom: 0;
+}
+.book_inf {
+  font-family: Lora;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: .5;
+  margin-bottom: 20px;
+}
+.book_inf:hover {
+  opacity: 1;
+  text-decoration: underline;
+}

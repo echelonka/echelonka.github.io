@@ -1,292 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Ciklum JavaScript Internship</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<script type="text/javascript" src="jquery-3.0.0.min.js"></script>
-	<script type="text/javascript" src="initMenu.js" ></script>
-	<script type="text/javascript" src="validation.js"></script>
-	<script type="text/javascript" src="bgSize.js"></script>
+	<meta charset="UTF-8">
+	<title>История с кладбищем</title>
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="titlestyles.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/tabs.js"></script>
+	<script src="js/scroll.js"></script>
 </head>
-
 <body>
-		<header>
-			<img class="logo" src="img/microsoft.png">
-			<div class="menu">
-				<ul class="topmenu">
-					<li><a href="#" class="shop">Магазин</a>
-						<ul class="submenu">
-							<li><a href="#">Магазин Microsoft</a></li>
-							<li><a href="#">Устройства</a>
-								<ul class="subsubmenu">
-									<li><a href="#">Смартфоны</a></li>
-									<li><a href="#">Консоли и игры Xbox</a></li>
-									<li><a href="#">Аксессуары</a></li>
-									<li><a href="#">Планшеты</a></li>
-									<li><a href="#">Ноутбуки</a></li>
-									<li><a href="#">Моноблоки</a></li>
-									<li><a href="#">Спецпредложения</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Office</a>
-								<ul class="subsubmenu">
-									<li><a href="#">Все версии Office</a></li>
-									<li><a href="#">Office 365</a></li>
-									<li><a href="#">Office для Mac</a></li>
-									<li><a href="#">Office (коробочные версии)</a></li>
-									<li><a href="#">Выбрать свою версию Office</a></li>
-									<li><a href="#">Продление подписки на Office 365</a></li>
-									<li><a href="#">Приложения Office</a></li>
-									<li><a href="#">Языковые пакеты Office</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Windows</a>
-								<ul class="subsubmenu">
-									<li><a href="#">Windows</a></li>
-									<li><a href="#">Windows 10 Домашняя</a></li>
-									<li><a href="#">Windows 10 Профессиональная</a></li>
-									<li><a href="#">Windows (коробочные версии)</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Xbox</a>
-								<ul class="subsubmenu">
-									<li><a href="#">Xbox</a></li>
-									<li><a href="#">Xbox Live</a></li>
-									<li><a href="#">Консоли Xbox</a></li>
-									<li><a href="#">Аксессуары Xbox</a></li>
-									<li><a href="#">Игры для Xbox</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Дополнительное ПО</a>
-								<ul class="subsubmenu">
-									<li><a href="#">Программное обеспечение</a></li>
-									<li><a href="#">Visio</a></li>
-									<li><a href="#">Project</a></li>
-									<li><a href="#">Visual Studio</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Приложения</a>
-								<ul class="subsubmenu">
-									<li><a href="#">Все о приложениях</a></li>
-									<li><a href="#">Приложения для Windows</a></li>
-									<li><a href="#">Приложения для Windows Phone</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Игры</a>
-								<ul class="subsubmenu">
-									<li><a href="#">Все игры</a></li>
-									<li><a href="#">Игры для Windows</a></li>
-									<li><a href="#">Игры для Windows Phone</a></li>
-									<li><a href="#">Игры для Xbox</a></li>
-									<li><a href="#">Игры для ПК</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li><a href="#" class="products">Продукты</a>
-						<ul class="submenu">
-							<li><a href="#">ПО и услуги</a>
-								<ul class="subsubmenu">
-									<li><a href="#">Windows</a></li>
-									<li><a href="#">Office</a></li>
-									<li><a href="#">Бесплатная загрузка и средства безопасности</a></li>
-									<li><a href="#">Internet Explorer</a></li>
-									<li><a href="#">Microsoft Edge</a></li>
-									<li><a href="#">Skype</a></li>
-									<li><a href="#">OneNote</a></li>
-									<li><a href="#">OneDrive</a></li>
-									<li><a href="#">MSN</a></li>
-									<li><a href="#">Bing</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Устройства и Xbox</a>
-								<ul class="subsubmenu">
-									<li><a href="#">Аксессуары для ПК</a></li>
-									<li><a href="#">Xbox и игры</a></li>
-									<li><a href="#">Microsoft Lumia</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Для бизнеса</a>
-								<ul class="subsubmenu">
-									<li><a href="#">Облачные платформы</a></li>
-									<li><a href="#">Microsoft Azure</a></li>
-									<li><a href="#">Microsoft Dynamics</a></li>
-									<li><a href="#">Windows для бизнеса</a></li>
-									<li><a href="#">Office для бизнеса</a></li>
-									<li><a href="#">Skype для бизнеса</a></li>
-									<li><a href="#">Решение для предприятий</a></li>
-									<li><a href="#">Решения для малого бизнеса</a></li>
-									<li><a href="#">Найти поставщика решений</a></li>
-									<li><a href="#">Корпоративное лицензирование</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Государственный сектор</a></li>
-							<li><a href="#">Для разработчиков и ИТ-специалистов</a>
-								<ul class="subsubmenu">
-									<li><a href="#">Разработка приложений для Windows</a></li>
-									<li><a href="#">Microsoft Azure</a></li>
-									<li><a href="#">MDSN</a></li>
-									<li><a href="#">TechNet</a></li>
-									<li><a href="#">Visual Studio</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Для учащихся и преподавателей</a>
-								<ul class="subsubmenu">
-									<li><a href="#">Купить компьютеры и планшеты: оптимально для студентов</a></li>
-									<li><a href="#">Образование</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li><a href="#" class="support">Поддержка</a></li>
-				</ul>
-			</div>
-			<input type="search" placeholder="Искать на Microsoft.com" maxlength="200">
-			<img class="search-icon" src="img/search-icon.svg">
-			<a href="#" class="shop-cart"><img class="cart-icon" src="img/cart.svg"></a>
-			<a href="#" class="log-in">Войти</a>
+	<div class="main">
+		<header id="tabs">
+			<a href="#1" class="is-active" title="Перейти на главную страницу">Главная</a>
+			<a href="#2" title="Информация о книге">О книге</a>
+			<a href="#3" title="Биография автора">Об авторе</a>
 		</header>
-
-		<main>
-			<section class="hero-banner">
-				<div class="top-section">
-					<h1>Безопасный доступ, синхронизация и совместная работа</h1>
-					<h2>Переходите на Dropbox Business! Этот сервис любят пользователи, а для администраторов в нем есть все нужные инструменты контроля.</h2>
-					<a href="#" class="primary">Попробуйте бесплатную 30-дневную ознакомительную версию</a>
-					<span class="buynow">или <a href="#">купите прямо сейчас</a></span>
+		<div class="hero">
+			<h2>Нил Гейман</h2>
+			<h1><br>История с кладбищем</h1>
+		</div>
+		<div class="contentwrap">
+			<div class="tab is-active">
+				<h3><b>Содержание</b></h3>
+				<hr>
+				<div class="content">
+					<ul>
+						<li><a href="text.html#2">Глава 1. Как Никто не испугался покойников</a></li>
+						<li><a href="text.html#3">Глава 2. Новая подружка</a></li>
+						<li><a href="text.html#4">Глава 3. Псы господни</a></li>
+					</ul>
+					<ul>
+						<li><a href="text.html#5">Глава 4. Надгробие для ведьмы</a></li>
+						<li><a href="text.html#6">Глава 5. Данс-макабр</a></li>
+						<li><a href="text.html#7">Глава 6. Школьные дни Никто Оуэнса</a></li>
+					</ul>
+					<ul>
+						<li><a href="text.html#8">Глава 7. Мастера на все руки</a></li>
+						<li><a href="text.html#9">Глава 8. Расставания и прощания</a></li>
+					</ul>
 				</div>
-			</section>
-			<section class="signup-wrapper">
-				<div class="inside">
-					<h2>Join over 2 million designers already using InVision. Get InVision <strong>free</strong> forever!</h2>
-					<form method="post" class="signup-form" action="#" novalidate>
-						<p class="first-input">
-							<i class="ico-user"></i>
-							<input type="text" id="signup-name" autocomplete="off" required="required" min="3" placeholder="Your Name">
-						</p>
-						<p>
-							<i class="ico-email"></i>
-							<input type="text" id="signup-email" autocomplete="off" required="required" min="3" placeholder="Email Adress">
-						</p>
-						<p>
-							<i class="ico-password"></i>
-							<input type="password" id="signup-password" autocomplete="off" required="required" min="3" placeholder="Create a Password">
-						</p>
-						<p>
-							<a class="button">Get Started — Free Forever!</a>
-						</p>
-					</form>
-					<p class="terms">By clicking "Get Started — Free Forever!" I agree to InVision's <a href="#">Terms of Service.</a></p>
-				</div>
-			</section>
-			<section class="hover-effect">
-			<a href="#">
-				<h4>Featured content</h4>
-				<h3>Eve: Valkyrie</h3>
-				<div class="bg eve"></div>
-			</a>
-			<a href="#">
-				<h4>Inclided with all rift purchases</h4>
-				<h3>Lucky's Tale</h3>
-				<div class="bg fox"></div>
-			</a>
-			<a href="#">
-				<h4>Featured story</h4>
-				<h3>Announcing Oculus Connect 3 and Rift Availability Update</h3>
-				<div class="bg stage"></div>
-			</a>
-		</section>
-		</main>
-
-		<footer>
-			<div class="directory">
-				<nav class="columns">
-					<div class="directory-column">
-						<h3>Shop and Learn</h3>
-						<ul class="column-section">
-							<li><a href="#">Mac</a></li>
-							<li><a href="#">iPad</a></li>
-							<li><a href="#">iPhone</a></li>
-							<li><a href="#">Watch</a></li>
-							<li><a href="#">TV</a></li>
-							<li><a href="#">Music</a></li>
-							<li><a href="#">iTunes</a></li>
-							<li><a href="#">iPod</a></li>
-							<li><a href="#">Accessories</a></li>
-							<li><a href="#">Gift Cards</a></li>
-						</ul>
-					</div>
-					<div class="directory-column">
-						<h3>Apple Store</h3>
-						<ul class="column-section">
-							<li><a href="#">Find a Store</a></li>
-							<li><a href="#">Genius Bar</a></li>
-							<li><a href="#">Workshops and Learning</a></li>
-							<li><a href="#">Youth Programs</a></li>
-							<li><a href="#">Apple Store App</a></li>
-							<li><a href="#">Refurbished</a></li>
-							<li><a href="#">Financing</a></li>
-							<li><a href="#">Reuse and Recycling</a></li>
-							<li><a href="#">Order Status</a></li>
-							<li><a href="#">Shopping Help</a></li>
-						</ul>
-					</div>
-					<div class="directory-column">
-						<h3>For Education</h3>
-						<ul class="column-section">
-							<li><a href="#">Apple and Education</a></li>
-							<li><a href="#">Shop for College</a></li>
-						</ul>
-						<h3>For Business</h3>
-						<ul class="column-section">
-							<li><a href="#">Apple and Business</a></li>
-							<li><a href="#">Shop for Business</a></li>
-						</ul>
-					</div>
-					<div class="directory-column">
-						<h3>Account</h3>
-						<ul class="column-section">
-							<li><a href="#">Manage Your Apple ID</a></li>
-							<li><a href="#">Apple Store Account</a></li>
-							<li><a href="#">iCloud.com</a></li>
-						</ul>
-						<h3>Apple Values</h3>
-						<ul class="column-section">
-							<li><a href="#">Accessibility</a></li>
-							<li><a href="#">Education</a></li>
-							<li><a href="#">Environment</a></li>
-							<li><a href="#">Inclusion and Diversity</a></li>
-							<li><a href="#">Privacy</a></li>
-							<li><a href="#">Supplier Responsibility</a></li>
-						</ul>
-					</div>
-					<div class="directory-column">
-						<h3>About Apple</h3>
-						<ul class="column-section">
-							<li><a href="#">Apple Info</a></li>
-							<li><a href="#">Newsroom</a></li>
-							<li><a href="#">Job Opportunities</a></li>
-							<li><a href="#">Press Info</a></li>
-							<li><a href="#">Investors</a></li>
-							<li><a href="#">Events</a></li>
-							<li><a href="#">Contact Apple</a></li>
-						</ul>
-					</div>
-				</nav>
-				<section class="under-nav">
-					<p class="footer-shop">More ways to shop: Visit an <a href="#">Apple Store</a>, call 1-800-MY-APPLE, or <a href="#">find a reseller</a>.</p>
-					<p class="footer-legal">Copyright © 2016 Apple Inc. All rights reserved.</p>
-					<div class="footer-legal-copyright">
-						<a href="#">Privacy Policy</a>
-						<a href="#">Terms of Use</a>
-						<a href="#">Sales and Refunds</a>
-						<a href="#">Legal</a>
-						<a href="#">Site Map</a>
-					</div>
-				</section>
 			</div>
-		</footer>
+			<div class="tab">
+				<div class="about_book">
+					<img class="book" src="img/book.jpg" alt="История с кладбищем" title="История с кладбищем">
+					<p><b>«История с кладбищем»</b> (англ. The Graveyard Book) — детский фантастический роман британского писателя Нила Геймана, опубликованный в 2008 году одновременно в Великобритании и США. Это история мальчика по имени Никто Оуэнс, которого после убийства его родителей таинственным человеком принимает на воспитание семья призраков со старого кладбища. Это первый полноценный роман для детей после бестселлера «Коралина», выпущенного в 2002 году. Книга получила премию «Хьюго», «медаль Ньюбери», а также премию «Локус» за лучший роман.</p>
+					<h4>Предпосылки</h4>
+					<p>Нил Гейман признаётся, что впервые идея написать эту книгу пришла к нему в 1985 году: однажды он увидел своего двухлетнего сына Майка проезжающим на трёхколесном велосипеде вокруг кладбища, напротив которого в то время жила его семья. «В тот момент я подумал, что могу написать нечто похожее на „Книгу джунглей“, переместив место действия на кладбище», — сказал писатель в интервью после получения премии Ньюбери.
+					Каждая глава представляется в форме рассказа, в промежутках между которыми проходит год или два жизни Никта. Некоторые главы имеют прямые аналогии с работой Редьярда Киплинга (например, глава «Псы Господни» параллельна «Охоте Каа»), также следует обратить внимание на английское названии книги, дословно переводящееся как «Книга кладбища».</p>
+					<h4>Публикация книги</h4>
+					<p>Одна из глав книги была ранее опубликована в виде короткого рассказа в антологии Геймана «М значит Магия» и даже выиграла премию «Локус» за лучшую новеллу. Полностью же книга была представлена 30 сентября 2008 года в США издательством HarperCollins, а 31 октября 2008 года в Великобритании издательством Bloomsbury Publishing. Обложку и внутреннее оформление американского издания выполнил давний соавтор Нила Геймана Дэйв МакКин, его иллюстрации также украшали британское издание, предназначенное для взрослых. Британское издание для детей оформил Крис Риддел.</p>
+					<p>Существует ограниченное американское издание с другой обложкой и иллюстрациями МакКина, произведенное Subterranean Press. Существует также аудиокнига, озвученная самим автором, включающая версию «Пляски смерти» Сен-Санса, исполненную банджоистом-виртуозом Бела Флэком.</p>
+					<p>На русском языке книга была выпущена в 2009 году издательством «АСТ» в серии состоящей только из книг Нила Геймана. Оформление выполнил Андрей Ферез, прежде оформивший другие книги серии — «Коралину» и «Звёздную пыль», а также Бориса Акунина «Ф. М.».</p>
+					<h4>Главные герои</h4>
+					<ul>
+						<li><b>Никто (Никт) Оуэнс</b> — главный герой. Его родители и сестра были убиты, когда он был малышом, и он стал жителем кладбища. Он выучил определенные призрачные способности, такие как Растворение, Скольжение и Снохождение.</li>
+						<li><b>Сайлес</b> — опекун Никта, его учитель и консультант. Сайлеса нет в живых, но он не умер. В отличие от призраков, он может пойти к живым, чтобы приобрести продукты питания, медикаменты и другие необходимые вещи для мальчика. Является членом Почетного караула и это намекает на то, что он является вампиром, но прямого указания на это в книге нет. Позднее в интервью автор подтвердил, что Сайлес вампир.</li>
+						<li><b>Джек</b> — убийца родителей Никта. Загадочный мужчина, пытающийся убить мальчика.</li>
+						<li><b>Мистер и миссис Оуэнс</b> — призраки, приютившие главного героя, когда он был ребёнком. При жизни у этой пары не было своих детей, поэтому они называют его сыном.</li>
+						<li><b>Скарлетт Перкинс</b> — подруга Никта. В конце книги Сайлес стирает ей память о Никте.</li>
+					</ul>
+				</div>
+				<div class="top"></div>
+			</div>
+			<div class="tab">
+				<div class="about_author">
+					<img src="img\neilgaiman.jpg" alt="Нил Гейман" title="Нил Гейман">
+					<p><b>Нил Ричард Макки&#769ннон Ге&#769йман</b> — известный английский писатель-фантаст, автор графических романов и комиксов, сценариев к фильмам. К самым знаменитым его работам относятся: «Звездная пыль», «Американские боги», «Коралина», «История с кладбищем», серия комиксов «Песочный человек». Гейману присуждены многие награды, включая премию «Хьюго», премию «Небьюла», премию Брэма Стокера, медаль Ньюбери.</p>
+					<h4>Биография и творчество</h4>
+					<p>Нил Гейман родился 10 ноября 1960 года в городе Портсмут (Великобритания). В 1965 году его семья переехала в Ист-Гинстед в Западном Сассексе, где родители писателя изучали дианетику в центре саентологии. Одна из его сестер работает в саентологическом центре в Лос-Анджелесе. Гейман говорит, что он не саентолог, но, как и иудаизм, саентология — религия его семьи.</p>
+					<p>В 1984 году он закончил своё первое произведение — биографию группы Duran Duran. В то же время он работал журналистом и занимался подготовкой интервью для различных британских журналов.</p>
+					<p>В конце 1980-х годов вышла его книга «Don’t Panic: The Official Hitchhiker’s Guide to the Galaxy Companion» о писателе Дугласе Адамсе и его книге «Автостопом по галактике».</p>
+					<p>Гейман написал множество комиксов для нескольких издателей. Его отмеченная наградами серия The Sandman рассказывает о Морфее — антропоморфной персонификации Сна. Серия началась в 1989 и была закончена в 1996: 75 выпусков обычной серии, специальный выпуск и два рисованных рассказа собраны в 10 томов и до сих пор остаются в печати.</p>
+					<p>В 1996 Гейман и Эд Крамер составили антологию «The Sandman: Book of Dreams», в которую вошли произведения Тори Эймос, Клайва Баркера, Тэда Уильямса, Сюзанны Кларк и других авторов. Антология была номинирована на British Fantasy Award.</p>
+					<p>Также в качестве приглашенного автора работал над одним из выпуском комикса «Спаун» и минисерией про одного из персонажей этой вселенной, после чего судился с основным создателем комикса, который самовольно использовал придуманных Гейманом героев.</p>
+					<p>В 1990 году вышел роман «Благие знамения» (англ. «Good Omens»), который Гейман написал в соавторстве с известным английским писателем Терри Пратчеттом.</p>
+					<p>В 1991-1997 годах Гейман написал роман-сказку «Звёздная пыль», который в 1999 году был удостоен премии Mythopoeic Award. В 2007 году на экраны вышла экранизация романа — фильм режиссёра Мэттью Вона «Звёздная пыль».</p>
+					<p>Самый известный роман Нила Геймана — «Американские боги» был издан в 2001 году, сразу заслужил признание критиков и удостоился нескольких престижных премий, в том числе премий «Хьюго» и «Небьюла».</p>
+				</div>
+				<div class="top"></div>
+			</div>
+		</div>
+	</div>
+	<a href="info.html" class="book_inf">Выходные ведомости издания</a>
 </body>
-
 </html>

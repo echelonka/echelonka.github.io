@@ -1,0 +1,101 @@
+@font-face {
+  font-family: Lora;
+  src: url(fonts/Lora.ttf) format('ttf');
+}
+@font-face {
+  font-family: LoraBold;
+  src: url(fonts/LoraBold.ttf);
+}
+@font-face {
+  font-family: Sunday;
+  src: url(font/Sunday.ttf) format('ttf');
+}
+body {
+  background-color: #394248;
+  margin: 0;
+  margin: 0;
+  background-color: #394248;
+}
+body ::selection {
+  background-color: #394248;
+  color: #ffffff;
+}
+body ::-moz-selection {
+  background-color: #394248;
+  color: #ffffff;
+}
+body b {
+  font-family: LoraBold;
+}
+.main {
+  color: #263a3a;
+  width: 700px;
+  margin: 0 auto 10px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  font-family: Lora;
+  border-radius: 0 0 10px 10px;
+}
+.main header {
+  padding: 10px;
+}
+.main header a {
+  text-decoration: none;
+  color: #263a3a;
+  font-size: 14px;
+}
+.main header a:hover {
+  text-decoration: underline;
+}
+.main hr {
+  border: none;
+  border-radius: 100%;
+  height: 5px;
+  background-color: #263a3a;
+  width: 500px;
+}
+.main .info_rus {
+  padding: 0 100px 5px 100px;
+  line-height: 1.5;
+}
+.main .info_rus p {
+  text-align: center;
+  font-size: 18px;
+  margin: 10px 0 0 0;
+}
+.main .info_rus p.info_header {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.main .info_rus .bibl {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.main .info_rus span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main .info_ukr {
+  padding: 0 100px 5px 100px;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+.main .info_ukr p {
+  text-align: center;
+  font-size: 18px;
+  margin: 10px 0 0 0;
+}
+.main .info_ukr p.info_header {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.main .info_ukr .bibl {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.main .info_ukr span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
