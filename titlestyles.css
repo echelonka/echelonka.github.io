@@ -14,10 +14,19 @@
   font-weight: bold;
   font-style: normal;
 }
+/* @font-face{
+	font-family: 'Sunday';
+	src: url('fonts/Sunday.eot');
+	src: url('fonts/Sunday.ttf') format('truetype'),
+		 url('fonts/Sunday.woff') format('woff'),
+		 url('fonts/Sunday.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+} */
 @font-face {
   font-family: 'Sunday';
   src: url('fonts/Sunday.eot');
-  src: url('fonts/Sunday.ttf') format('truetype'), url('fonts/Sunday.woff') format('woff'), url('fonts/Sunday.otf') format('opentype');
+  src: local('☺'), url('fonts/Sunday.woff') format('woff'), url('fonts/Sunday.ttf') format('truetype'), url('fonts/Sunday.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
