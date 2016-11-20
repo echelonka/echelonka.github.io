@@ -13,7 +13,7 @@ $(function(){
 
 	function img(){
 		href = href.substr(href.length-1)-1;
-		var img = "url('img/img"+href+".jpg";
+		var img = "url('img/img"+href+".jpg)";
 		return img;
 	}
 
