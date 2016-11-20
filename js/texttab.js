@@ -1,6 +1,6 @@
 $(function(){
 
-	let url = $(location).attr('href'),
+	var url = $(location).attr('href'),
 	href = url.substr(url.length - 2);
 
 	function tab(link, img){
@@ -13,7 +13,7 @@ $(function(){
 
 	function img(){
 		href = href.substr(href.length-1)-1;
-		let img = "url('img/img"+href+".jpg";
+		var img = "url('img/img"+href+".jpg";
 		return img;
 	}
 
