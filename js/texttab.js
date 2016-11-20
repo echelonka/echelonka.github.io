@@ -8,12 +8,12 @@ $(function(){
 		$('#tabs').find('a.is-active').removeClass('is-active');
 		link.addClass('is-active');
 		$('.contentwrap').find('div.tab').eq(link.index()-1).addClass('is-active');
-		$('.hero').css('background-image', img);
+		$('.hero').css('background-image', "url('"+img+"')");
 	}
 
 	function img(){
 		href = href.substr(href.length-1)-1;
-		var img = "url(img/img"+href+".jpg)";
+		var img = "img/img"+href+".jpg";
 		return img;
 	}
 
