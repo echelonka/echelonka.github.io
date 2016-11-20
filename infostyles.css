@@ -1,20 +1,27 @@
+/* шрифты */
+/* шрифты */
 @font-face {
-  font-family: Lora;
-  src: url('fonts/Lora.ttf') format('truetype');
+  font-family: 'Lora';
+  src: url('fonts/Lora.eot');
+  src: url('fonts/Lora.ttf') format('truerype'), url('fonts/Lora.otf') format('opentype'), url('fonts/Lora.woff') format('woff'), url('fonts/Lora.svg#font') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: LoraBold;
-  src: url('fonts/LoraBold.ttf') format('truetype');
+  font-family: 'LoraBold';
+  src: url('fonts/LoraBold.eot');
+  src: url('fonts/LoraBold.ttf') format('truetype'), url('fonts/LoraBold.otf') format('opentype'), url('fonts/LoraBold.woff') format('woff'), url('fonts/LoraBold.svg#font') format('svg');
   font-weight: bold;
+  font-style: normal;
 }
 @font-face {
-  font-family: Sunday;
-  src: url('fonts/Sunday.ttf') format('truetype');
+  font-family: 'Sunday';
+  src: url('fonts/Sunday.eot');
+  src: url('fonts/Sunday.ttf') format('truetype'), url('fonts/Sunday.woff') format('woff'), url('fonts/Sunday.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
+/* цвета */
 body {
   background-color: #394248;
   margin: 0;

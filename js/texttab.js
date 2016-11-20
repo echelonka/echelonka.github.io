@@ -28,6 +28,7 @@ $(function(){
 		href = url.substr(url.length - 1);
 		if ($(this).attr('class') !== 'is-active') {
 			tab($(this), img());
+			$('body,html').animate({scrollTop:0},0);
 		}
 	});
 

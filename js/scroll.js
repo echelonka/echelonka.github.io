@@ -15,6 +15,5 @@ $(function() {
 		},
 		function(){
 			$(this).animate({opacity: .5},200);
-		}
-		);
+		});
 });
