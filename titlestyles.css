@@ -123,16 +123,122 @@ body b {
   border-radius: 0 0 10px 10px;
   /* вкладки */
 
-  /* форматирование текстов во вкладках */
-
 }
 .main .contentwrap .tab {
   display: none;
+  /* форматирование текстов во вкладках */
+
+  /* о книге */
+
+  /* об авторе */
+
   /* кнопка наверх */
 
 }
 .main .contentwrap .tab.is-active {
   display: block;
+}
+.main .contentwrap .tab h3 {
+  margin: 0;
+  font-size: 50px;
+}
+.main .contentwrap .tab hr {
+  margin: 10px 0 0 0;
+  height: 5px;
+  background-color: #263a3a;
+  border: none;
+}
+.main .contentwrap .tab .content {
+  display: flex;
+}
+.main .contentwrap .tab .content ul {
+  margin: 0;
+  padding: 20px 15px 0 0;
+}
+.main .contentwrap .tab .content ul li {
+  list-style-type: none;
+  padding-bottom: 24px;
+}
+.main .contentwrap .tab .content ul li a {
+  text-decoration: none;
+  color: #263a3a;
+  font-size: 20px;
+  transition: 0.3 ease;
+}
+.main .contentwrap .tab .content ul li a:hover {
+  text-decoration: underline;
+}
+.main .contentwrap .tab .content ul li:last-child {
+  padding-bottom: 0;
+}
+.main .contentwrap .tab .content ul:last-child {
+  padding-right: 0;
+}
+.main .contentwrap .tab .text-format {
+  font-size: 18px;
+  text-indent: 30px;
+  line-height: 1.5;
+}
+.main .contentwrap .tab .header-format {
+  font-size: 24px;
+  margin: 20px 0 10px 0;
+}
+.main .contentwrap .tab .paragraph-format {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.main .contentwrap .tab .about_book img {
+  float: right;
+  margin: 0 0 25px 25px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+.main .contentwrap .tab .about_book h4 {
+  font-size: 18px;
+  text-indent: 30px;
+  line-height: 1.5;
+  font-size: 24px;
+  margin: 20px 0 10px 0;
+}
+.main .contentwrap .tab .about_book p {
+  font-size: 18px;
+  text-indent: 30px;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.main .contentwrap .tab .about_book ul {
+  font-size: 18px;
+  text-indent: 30px;
+  line-height: 1.5;
+  text-indent: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.main .contentwrap .tab .about_book #video {
+  padding-left: 162px;
+}
+.main .contentwrap .tab .about_author img {
+  float: left;
+  margin: 0 25px 25px 0;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  width: 350px;
+}
+.main .contentwrap .tab .about_author h4 {
+  font-size: 18px;
+  text-indent: 30px;
+  line-height: 1.5;
+  font-size: 24px;
+  margin: 20px 0 10px 0;
+}
+.main .contentwrap .tab .about_author p {
+  font-size: 18px;
+  text-indent: 30px;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.main .contentwrap .tab .about_author p:last-child {
+  margin-bottom: 0;
 }
 .main .contentwrap .tab .top {
   width: 50px;
@@ -145,105 +251,6 @@ body b {
   display: none;
   opacity: .5;
   border-radius: 5px;
-}
-.main .contentwrap h3 {
-  margin: 0;
-  font-size: 50px;
-}
-.main .contentwrap hr {
-  margin: 10px 0 0 0;
-  height: 5px;
-  background-color: #263a3a;
-  border: none;
-}
-.main .contentwrap .content {
-  display: flex;
-}
-.main .contentwrap .content ul {
-  margin: 0;
-  padding: 20px 15px 0 0;
-}
-.main .contentwrap .content ul li {
-  list-style-type: none;
-  padding-bottom: 24px;
-}
-.main .contentwrap .content ul li a {
-  text-decoration: none;
-  color: #263a3a;
-  font-size: 20px;
-  transition: 0.3 ease;
-}
-.main .contentwrap .content ul li a:hover {
-  text-decoration: underline;
-}
-.main .contentwrap .content ul li:last-child {
-  padding-bottom: 0;
-}
-.main .contentwrap .content ul:last-child {
-  padding-right: 0;
-}
-.main .contentwrap .text-format {
-  font-size: 18px;
-  text-indent: 30px;
-  line-height: 1.5;
-}
-.main .contentwrap .header-format {
-  font-size: 24px;
-  margin: 20px 0 10px 0;
-}
-.main .contentwrap .paragraph-format {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-.main .contentwrap .about_book img {
-  float: right;
-  margin: 0 0 25px 25px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-}
-.main .contentwrap .about_book h4 {
-  font-size: 18px;
-  text-indent: 30px;
-  line-height: 1.5;
-  font-size: 24px;
-  margin: 20px 0 10px 0;
-}
-.main .contentwrap .about_book p {
-  font-size: 18px;
-  text-indent: 30px;
-  line-height: 1.5;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-.main .contentwrap .about_book ul {
-  font-size: 18px;
-  text-indent: 30px;
-  line-height: 1.5;
-  text-indent: 0;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-.main .contentwrap .about_author img {
-  float: left;
-  margin: 0 25px 25px 0;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-  width: 350px;
-}
-.main .contentwrap .about_author h4 {
-  font-size: 18px;
-  text-indent: 30px;
-  line-height: 1.5;
-  font-size: 24px;
-  margin: 20px 0 10px 0;
-}
-.main .contentwrap .about_author p {
-  font-size: 18px;
-  text-indent: 30px;
-  line-height: 1.5;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-.main .contentwrap .about_author p:last-child {
-  margin-bottom: 0;
 }
 .book_inf {
   font-family: 'Lora';

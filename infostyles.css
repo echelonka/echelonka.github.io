@@ -83,7 +83,7 @@ body b {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-.main .info_rus span {
+.main .info_rus .copyright {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -106,7 +106,7 @@ body b {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-.main .info_ukr span {
+.main .info_ukr .copyright {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
