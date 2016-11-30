@@ -27,6 +27,8 @@ body {
   margin: 0;
   margin: 0;
   background-color: #394248;
+  /* end .main */
+
 }
 body ::selection {
   background-color: #394248;
@@ -39,13 +41,13 @@ body ::-moz-selection {
 body b {
   font-family: LoraBold;
 }
-.main {
+body .main {
   width: 1024px;
   margin: 0 auto 10px auto;
   /* название книги */
 
 }
-.main header {
+body .main header {
   position: fixed;
   top: 0;
   display: flex;
@@ -62,7 +64,7 @@ body b {
   -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   -ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
-.main header a {
+body .main header a {
   text-align: center;
   line-height: 35px;
   text-decoration: none;
@@ -76,18 +78,18 @@ body b {
   border-right: 2px solid rgba(255, 255, 255, 0.1);
   transition: .3s ease;
 }
-.main header a:hover {
+body .main header a:hover {
   background: #2a4040;
   font-size: 20px;
 }
-.main header a:first-child {
+body .main header a:first-child {
   border-left: 2px solid rgba(255, 255, 255, 0.1);
 }
-.main header a.is-active {
+body .main header a.is-active {
   background: #2a4040;
   font-size: 20px;
 }
-.main .hero {
+body .main .hero {
   width: 100%;
   height: 440px;
   background-image: url('img/img1.jpg');
@@ -96,14 +98,14 @@ body b {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-.main .hero .headers {
+body .main .hero .headers {
   font-family: Sunday;
   margin: 0;
   color: white;
   text-align: center;
   text-shadow: 0 4px 10px black;
 }
-.main .hero h1 {
+body .main .hero h1 {
   font-family: Sunday;
   margin: 0;
   color: white;
@@ -111,7 +113,7 @@ body b {
   text-shadow: 0 4px 10px black;
   font-size: 72px;
 }
-.main .hero h2 {
+body .main .hero h2 {
   font-family: Sunday;
   margin: 0;
   color: white;
@@ -120,7 +122,7 @@ body b {
   font-size: 48px;
   padding-top: 70px;
 }
-.main .contentwrap {
+body .main .contentwrap {
   margin: 0 auto;
   width: 700px;
   background-color: #ffffff;
@@ -132,28 +134,30 @@ body b {
   /* вкладки */
 
 }
-.main .contentwrap h3 {
+body .main .contentwrap h3 {
   font-family: Sunday;
   font-size: 24px;
   margin: 0 0 30px;
   text-align: center;
 }
-.main .contentwrap .tab {
+body .main .contentwrap .tab {
   display: none;
-  /* кнопка наверх */
-
 }
-.main .contentwrap .tab.is-active {
+body .main .contentwrap .tab.is-active {
   display: block;
 }
-.main .contentwrap .tab p {
+body .main .contentwrap .tab p {
   font-size: 18px;
   line-height: 1.5;
   text-indent: 30px;
   margin: 10px 0 0 0;
   text-align: justify;
 }
-.main .contentwrap .tab .top {
+body footer {
+  /* кнопка наверх */
+
+}
+body footer .top {
   width: 50px;
   height: 50px;
   background: url('img/arrow.svg') no-repeat #bba989 center;
