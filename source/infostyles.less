@@ -1,40 +1,4 @@
-/* шрифты */
-@font-face{
-	font-family: 'Lora';
-	src: url('fonts/Lora.eot');
-	src: local('Lora'),
-	url('fonts/Lora.ttf') format('truerype'),
-		 url('fonts/Lora.otf') format('opentype'),
-		 url('fonts/Lora.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face{
-	font-family: 'LoraBold';
-	src: url('fonts/LoraBold.eot');
-	src: local('LoraBold'),
-	url('fonts/LoraBold.ttf') format('truetype'),
-		 url('fonts/LoraBold.otf') format('opentype'),
-		 url('fonts/LoraBold.woff') format('woff');
-	font-weight: bold;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'Sunday';
-	src: url('fonts/Sunday.eot');
-	src: local('Sunday'),
-	url('fonts/Sunday.woff') format('woff'),
-	url('fonts/Sunday.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-@textfont: Lora;
-@textfontb: LoraBold;
-@headerfont: Sunday;
-/* цвета */
-@white: #fff;
-@darkgreen: #263a3a;
-@bgcolor: #394248;
+@import "_theme";
 
 body{
 	background-color: @bgcolor;
@@ -52,11 +16,11 @@ body{
 	b{
 		font-family: @textfontb;
 	}
-}
+
 
 	.main{
 		color: @darkgreen;
-		width: 700px;
+		max-width: 700px;
 		margin: 0 auto 10px auto;
 		box-shadow: 0 0 20px rgba(0,0,0,.2);
 		background-color: @white;
@@ -79,7 +43,7 @@ body{
 			border-radius: 100%;
 			height: 5px;
 			background-color: @darkgreen;
-			width: 500px;
+			width: 75%;
 		}
 		.info_rus{
 			padding: 0 100px 5px 100px;
@@ -106,6 +70,22 @@ body{
 		.info_ukr{
 			.info_rus;
 			padding-bottom: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px){
+	body{
+		.main{
+			header{
+				a{
+					font-size: 18px;
+				}
+			}
+			.info_rus, .info_ukr{
+				padding-left: 20px;
+				padding-right: 20px;
+			}
 		}
 	}
 }

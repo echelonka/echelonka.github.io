@@ -1,0 +1,85 @@
+@media screen and (max-width: 768px) {
+  body header {
+    height: 60px;
+  }
+  body header a {
+    line-height: 55px;
+    width: calc(33.33333333%);
+    font-size: 18px;
+  }
+  body header a:hover {
+    font-size: 20px;
+  }
+  body header a.is-active {
+    background: #2a4040;
+    font-size: 20px;
+  }
+  body .hero {
+    height: 300px;
+  }
+  body .hero h1 {
+    font-size: 48px;
+  }
+  body .hero h2 {
+    padding-top: 40px;
+    font-size: 36px;
+  }
+  body .contentwrap {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  body .contentwrap p {
+    text-indent: 0 !important;
+  }
+  body .contentwrap .tab h3 {
+    font-size: 36px;
+  }
+  body .contentwrap .tab .content {
+    flex-direction: column;
+  }
+  body .contentwrap .tab .content ul {
+    padding-right: 0;
+  }
+  body .contentwrap .tab .content ul li a {
+    font-size: 20px;
+  }
+  body .contentwrap .tab .about_book img {
+    float: none;
+    display: block;
+    width: 80%;
+    margin: 0 0 25px 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body .contentwrap .tab .about_book #video {
+    display: none;
+  }
+  body .contentwrap .tab .about_book h4 {
+    font-size: 24px;
+    text-indent: 0;
+  }
+  body .contentwrap .tab .about_book ul {
+    padding-left: 20px;
+  }
+  body .contentwrap .tab .about_book ul li {
+    font-size: 18px;
+  }
+  body .contentwrap .tab .about_author img {
+    float: none;
+    display: block;
+    width: 80%;
+    margin: 0 0 25px 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body .contentwrap .tab .about_author h4 {
+    text-indent: 0;
+  }
+  body footer .top {
+    right: 20px;
+    bottom: 40px;
+  }
+  body footer a {
+    font-size: 18px;
+  }
+}

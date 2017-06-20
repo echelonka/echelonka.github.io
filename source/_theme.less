@@ -1,0 +1,55 @@
+/* шрифты */
+@font-face{
+	font-family: 'Lora';
+	src: url('../fonts/Lora.eot');
+	src: local('Lora'),
+	url('../fonts/Lora.ttf') format('truerype'),
+		 url('../fonts/Lora.otf') format('opentype'),
+		 url('../fonts/Lora.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'LoraBold';
+	src: url('../fonts/LoraBold.eot');
+	src: local('LoraBold'),
+	url('../fonts/LoraBold.ttf') format('truetype'),
+		 url('../fonts/LoraBold.otf') format('opentype'),
+		 url('../fonts/LoraBold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Sunday';
+	src: url('../fonts/Sunday.eot');
+	src: local('Sunday'),
+	url('../fonts/Sunday.woff') format('woff'),
+	url('../fonts/Sunday.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@textfont: 'Lora';
+@textfontb: 'LoraBold';
+@headerfont: 'Sunday';
+/* цвета */
+@white: #fff;
+@darkgreen: #263a3a;
+@bgcolor: #394248;
+
+body{
+	background-color: @bgcolor;
+	margin: 0;
+	::selection{
+		background-color: @bgcolor;
+		color: @white;
+	}
+	::-moz-selection{
+		background-color: @bgcolor;
+		color: @white;
+	}
+	b{
+		font-family: @textfontb;
+	}
+	margin: 0;
+	background-color: @bgcolor;
+}

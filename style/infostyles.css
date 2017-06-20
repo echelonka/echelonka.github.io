@@ -1,0 +1,120 @@
+/* шрифты */
+@font-face {
+  font-family: 'Lora';
+  src: url('../fonts/Lora.eot');
+  src: local('Lora'), url('../fonts/Lora.ttf') format('truerype'), url('../fonts/Lora.otf') format('opentype'), url('../fonts/Lora.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LoraBold';
+  src: url('../fonts/LoraBold.eot');
+  src: local('LoraBold'), url('../fonts/LoraBold.ttf') format('truetype'), url('../fonts/LoraBold.otf') format('opentype'), url('../fonts/LoraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sunday';
+  src: url('../fonts/Sunday.eot');
+  src: local('Sunday'), url('../fonts/Sunday.woff') format('woff'), url('../fonts/Sunday.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* цвета */
+body {
+  margin: 0;
+  background-color: #394248;
+}
+body ::selection {
+  background-color: #394248;
+  color: #fff;
+}
+body ::-moz-selection {
+  background-color: #394248;
+  color: #fff;
+}
+body b {
+  font-family: 'LoraBold';
+}
+body .main {
+  color: #263a3a;
+  max-width: 700px;
+  margin: 0 auto 10px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  font-family: 'Lora';
+  border-radius: 0 0 10px 10px;
+}
+body .main header {
+  padding: 10px;
+}
+body .main header a {
+  text-decoration: none;
+  color: #263a3a;
+  font-size: 14px;
+}
+body .main header a:hover {
+  text-decoration: underline;
+}
+body .main hr {
+  border: none;
+  border-radius: 100%;
+  height: 5px;
+  background-color: #263a3a;
+  width: 75%;
+}
+body .main .info_rus {
+  padding: 0 100px 5px 100px;
+  line-height: 1.5;
+}
+body .main .info_rus p {
+  text-align: center;
+  font-size: 18px;
+  margin: 10px 0 0 0;
+}
+body .main .info_rus p.info_header {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+body .main .info_rus .bibl {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+body .main .info_rus .copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body .main .info_ukr {
+  padding: 0 100px 5px 100px;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+body .main .info_ukr p {
+  text-align: center;
+  font-size: 18px;
+  margin: 10px 0 0 0;
+}
+body .main .info_ukr p.info_header {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+body .main .info_ukr .bibl {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+body .main .info_ukr .copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  body .main header a {
+    font-size: 18px;
+  }
+  body .main .info_rus,
+  body .main .info_ukr {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

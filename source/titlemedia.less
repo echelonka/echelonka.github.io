@@ -1,0 +1,98 @@
+@media screen and (max-width: 768px) {
+	body{
+		header{
+			height: 60px;
+			a{
+				line-height: 55px;
+				width: calc(100% / 3);
+				font-size: 18px;
+				&:hover{
+					font-size: 20px;
+				}
+				&.is-active{
+					background: lighten(#263a3a, 2%);
+					font-size: 20px;
+				}
+			}
+		}
+		.hero{
+			height: 300px;
+			h1{
+				font-size: 48px;
+			}
+			h2{
+				padding-top: 40px;
+				font-size: 36px;
+			}
+		}
+		.contentwrap{
+			padding: 10px;
+			margin-bottom: 10px;
+			p{
+				text-indent: 0 !important;
+			}
+			.tab{
+				h3{
+					font-size: 36px;
+				}
+				.content{
+					flex-direction: column;
+					ul{
+						padding-right: 0;
+						li{
+							a{
+								font-size: 20px;
+							}
+						}
+					}
+				}
+				.about_book{
+					img{
+						float: none;
+						display: block;
+						width: 80%;
+						margin: 0 0 25px 0;
+						margin-left: auto;
+						margin-right: auto;
+					}
+					#video{
+						display: none;
+					}
+					h4{
+						font-size: 24px;
+						text-indent: 0;
+					}
+					ul{
+						padding-left: 20px;
+						li{
+							font-size: 18px;
+						}
+					}
+				}
+				.about_author{
+					img{
+						float: none;
+						display: block;
+						width: 80%;
+						margin: 0 0 25px 0;
+						margin-left: auto;
+						margin-right: auto;
+					}
+					h4{
+						text-indent: 0;
+					}
+				}
+			}
+			
+		}
+		footer{
+			.top{
+				right: 20px;
+				bottom: 40px;
+			}
+			a{
+				font-size: 18px;
+			}
+		}
+	}
+}

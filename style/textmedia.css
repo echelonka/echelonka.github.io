@@ -1,0 +1,31 @@
+@media screen and (max-width: 768px) {
+  body header {
+    flex-wrap: wrap;
+  }
+  body header a {
+    flex-grow: 1;
+    width: calc(25%);
+    font-size: 18px;
+  }
+  body .hero {
+    margin-top: 90px;
+    height: 300px;
+  }
+  body .hero h1 {
+    font-size: 48px;
+  }
+  body .hero h2 {
+    padding-top: 40px;
+    font-size: 36px;
+  }
+  body .contentwrap {
+    padding: 20px;
+  }
+  body .contentwrap .tab p {
+    text-indent: 10px;
+  }
+  body footer .top {
+    right: 20px;
+    bottom: 40px;
+  }
+}
